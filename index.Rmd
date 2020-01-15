@@ -216,7 +216,7 @@ Slanger:
 img(pattern="images/2019-12-27_08:55|images/2019-12-26_12:01")
 ```
 
-Og vandfald man kan bade i:
+Og vandfald man kan bade i. Vilfred flyver og Carl har vist gang i noget Gollum imitation:
 
 ```{r}
 img(pattern="images/2019-12-26_11:43|images/2019-12-26_12:21")
