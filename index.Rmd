@@ -108,15 +108,15 @@ img <- function(tstart=NA, tend=NA, columns=2, pattern=NA, isel=NA, caption=""){
 
 Kære alle
 
-Vi har nu rejst og set mange steder i Tanzania. Det har været vildt, det har
+Vi har nu rejst og været mange steder i Tanzania. Det har været vildt, det har
 været udfordrende og det har været en kæmpe oplevelse! Dette "postkort" er bare
-for at prøve at dele en lille del af oplevelsen. Beklager det blev lidt langt, men
+for at prøve, at dele en lille del af oplevelsen. Beklager det blev lidt langt, men
 betragt det som en måneds facebookopslag samlet, så er det vel fair nok!
-Billederne fås i stor størrelse hvis man trykker på dem (jeg (Peder) har brugt lidt
+Billederne fås i stor størrelse, hvis man trykker på dem (jeg (Peder) har brugt lidt
 tid på at sætte dokumentet op (i rmarkdown)...nyder vist at pusle med min computer, ret
 Svend Ove agtigt (min morfar, han var dejlig!)).
 
-Hvis I ikke gider læse det, så giver vi gerne en lille fortælling når vi ses!
+Hvis I ikke gider læse det, så giver vi gerne en lille fortælling, når vi ses!
 Her er lidt [flere billeder](images.html).
 
 Kh. Peder, Christina, Carl og Peder
@@ -130,64 +130,73 @@ img(pattern="2019-12-16_08:43:52|2020-01-09_11:56:58")
 
 ### Livet i Tanzania
 
-Man bliver sgu' overvældet af, at tage til et så anderledes sted, specielt når
+Man bliver sgu' overvældet af, hvor anderledes der er i Tanzania, specielt når
 man har sine børn med. Selvom vi kun har boet på steder for rige mennesker, så
-kryber det hele under huden på en, og specielt de gange vi simpelthen bare 
-har gået en tur rundt og set på livet her - det er anderledes, på godt og ondt!
+kryber oplevelserne under huden. Noget af det stærkeste har været når vi simpelthen bare 
+har gået en tur rundt i en by og set på hverdagslivet her - det er anderledes, på godt og ondt!
 
-På swahili "Hakuna matata": Tag det roligt. Vi kendte det fra løvernes konge filmen, men
-nu har vi også lært "Pole pole": Slow down, på dansk måske, "skru' ned for
-tempoet". Helt klart noget vi kan lære af...de kunne så lære at organisere sig
-fra os. Det er simpelthen overraskende, så upræcise de er med alting - lige fra,
-at der ikke er priser på noget i butikker, til, at der ingen affaldsindsamling er,
-at vejene er meget smadrede, og i det hele taget er man helt på egen hånd - som
-tanzanianer er der ikke rigtig nogen hjælp, at hente fra samfundet! Som en gut vi snakkede med
-beskrev: "Her tænker man faktisk kun på sig selv"...og på den anden side, så
+På swahili "Hakuna matata": Tag det roligt. Det kender man fra løvernes konge (filmen), men
+nu har vi også lært "pole pole": Slow down. På dansk måske: "skru' ned for
+tempoet". Helt klart noget vi kan lære af dem - af os kunne de så lære, at organisere
+sig lidt bedre. F.eks. er meget overraskende, så upræcise de er med alting - lige fra, 
+at der ikke er priser på noget i butikker, til: der flyder med affald overalt,
+veje og bygninger er i mega ringe stand, folk sidder bare og stener - i det hele
+taget man helt er på egen hånd her - mangler man begge ben, så må man tage
+klipklapper på hænderne og f.eks. tigge fra de holdende biler midt på hovedvejen! En gut vi snakkede med
+beskrev: "Egentlig, så tænker man kun på sig selv her". På den anden side, så
 hænger man meget mere ud med hinanden, man sidder ikke inde i sit hus og
-kukkelurer...well, husene her er heller ikke værd at sidde inde i!
+kukkelurer...well, de fleste huse her er faktisk heller ikke værd, at opholde sig særligt længe
+inde i!
 
 Et par gange har vi prøvet at nævne klimaforandringer i en samtale, men det er
-simpelthen ikke et punkt på agandaen her - meget naturligt, når man faktisk ikke
-engang har en plan for hvad der skal ske i morgen. "Hakuna matata, det gør dig
-fri", tja, det er ikke meget afrikansk kultur vi får uden at opsøge den, men
-Løvernes konge har sneget sig ind. 
+simpelthen ikke et punkt på agandaen her. Meget naturligt, når man faktisk ikke
+engang har en plan for, hvad der skal ske i morgen. "Hakuna matata, det gør dig
+fri", tja, det er ikke meget afrikansk kultur vi får, uden at opsøge den, er det
+kun fra Løvernes konge!?
 
 
-### Tanzania er trygt og fredeligt
+### I Tanzania er der trygt og fredeligt
 
-Tanzania er fredeligt og man føler sig tryg. Selfølgeligt møder man
-turistpriser, men alle man snakker med er virkeligt rare, og de har noget
-værdifuldt i kulturen, man snakker man bare med hinanden, f.eks. var der flere
-gange hvor vores guide bare skulle købe noget og så snakkede han om lidt af
-hvert, på swahili, med den som solgte, og vi spurgte om han kendte vedkommende,
-men nej, de snakkede bare lidt...modsat os, et menneske i en butik er jo nærmest
-at betragte som en maskine! Dog hilser alle mulige lidt rigeligt på sådan nogen
-som os, men det vender man sig til.
+Tanzania er fredeligt og man føler sig tryg. Selvfølgeligt møder man
+lidt påstyr når man kommer rundt, men alle man snakker med er virkeligt rare. De har noget
+værdifuld kultur, det er meget ligefremt når man snakker med hinanden, f.eks. var der flere
+gange hvor vores guide skulle købe noget, hvor han endte med at snakke løs, på
+swahili, med den som solgte, og vi spurgte om han kendte vedkommende,
+men nej, de snakkede bare lidt...modsat i Danmark, hvor et menneske i en butik jo nærmest
+betragtes som en maskine! 
 
-Frugt er ubeskriveligt, ift. til det vi får nordpå, og faktisk er maden vi fik,
-specielt på Zanzibar, virkeligt god! Gode råvarer, men også lækkert tilberedt -
-super smagsfuld.
+Dog hilser alle mulige fremmede lidt rigeligt og overfladisk på sådan nogen som
+os, men det vender man sig til.
+
+Maden vi har fået, har været rigtig god, specielt på Zanzibar, hvor de også har
+alle friske krydderier. Frugterne er ubeskriveligt meget bedre end det vi får
+nordpå. Generelt fantastisk lækre råvarer og generelt lækkert tilberedt. Måske
+er det gennemsnitlige måltid hernede dog nok ikke helt så spændende.
 
 
 ### Den vildeste natur
 
-Tanzania er det vildeste smukke land, her er simpelthen alt: hav, bjerge, natur,
+Tanzania er det vildeste smukke land. Her er simpelthen alt: hav, bjerge, natur,
 varmt (lidt for varmt om natten for os!)...tættere på paradis end Danmark om
 vinteren! Dog mangler der god kaffe og ost! Sjovt med kaffen, da de jo dyrker
 den, men man får Africafe overalt - en lidt smagsløs pulverkaffe.
 
-Vi har været heldige, at komme ud og opleve naturen på tæt hold i to
-nationalparker: Først i regnskoven i Udzungwa og derefter safari i Ruaha - man
-føler det er forkert, for tanzanianerne har sgu' ikke været der, det er alt for
-dyrt at leje jeep og guide. 
+Ved ikke om vi egentligt har fortjent, at komme hertil på den måde og fare rundt
+i naturen. Tanzanianerne har sgu' ikke været der, det er alt for
+dyrt at leje jeep og guide. Vi har været helt på tæt hold i to
+nationalparker: Først i regnskoven i Udzungwa og derefter safari i Ruaha.
 
-I regnskoven er der vanvittigt meget liv og det er mega varmt og fugtigt -
+I regnskoven er der vanvittigt meget liv, og det er mega varmt og fugtigt -
 næsten for meget, f.eks. umuligt at tørre noget tøj vi vaskede, det hang 2-3
-dage på snor under halvtag uden at tørre og endte med at blive surt. Det var
-også lidt udfordrende for drengene, Carl var syg, feber og maven og ørene, og
-well, det var muligvis lidt for overvældende for Vilfred. Vi tilpassede
-os for ikke at gøre det til en dårlig oplevelse - dvs. at sidde og dimse med sit
-device! Vi havde nogle gode hikes til de smukkeste vandfald, og man kunne endog bade der.
+dage på snor under halvtag, uden at tørre og endte med at blive surt. Klimaet og
+omgivelserne var også lidt udfordrende for drengene, Carl har været syg, med
+feber og bøvl med maven og ørene, og well, det var muligvis lidt for
+overvældende for Vilfred. Vi har måttet tilpasse os for ikke at gøre det til en
+dårlig oplevelse - dvs. der har hver dag været pauser med devicedimsning! Men vi
+har været på nogle rigtig gode hikes ind i junglen, bl.a. til de smukkeste
+vandfald, hvor man kunne bade, og set virkeligt mange dyr og planter. Dog meget
+langt fra alt, f.eks. er der 250 sommerfuglearter i Udzungwa, selvom Christina
+er meget ihærdig, mener hun kun, at hun har set 15 af dem.
 
 White monkabey (endemisk og sjælden abe) og træ der gror på en sten:
 
@@ -264,7 +273,7 @@ sindsygt mange mennesker, og det ser ikke ud til at de fleste har særligt
 meget. Vores guide (Gasto, som tog os rundt på i landcruiser i 10 dage) sagde, at
 der nu er 7 millioner i Dar Es Salaam. Peders bud er, at der så er 1 millioner
 små vejboder, men kun 10 forskellge slags, det hyppigste: Drikkelse og snack,
-tasker, klipklapper, tlf. tilbehør, ... Det er noget af det vildeste, man
+tasker, klipklapper, tlf. tilbehør, ...l Det er noget af det vildeste, man
 tænker, at hvis en nu tænkte: "hov, måske skulle jeg ikke prøve at sidde her
 hele dagen og sælge det, som de andre 100 boder sælger", så ville der ske ting
 og sager...men det er der vist ingen der gør.
