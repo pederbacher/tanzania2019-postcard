@@ -1,0 +1,355 @@
+---
+title: "Postkort fra Tanzania"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    self_contained: false
+---
+
+<head>
+    <base target="_blank">
+</head>
+
+```{css, echo=FALSE}
+th, td {
+  width: 800px;
+  padding: 4px;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+  font-size: 18px;
+  line-height: 24px; 
+}  
+img{
+    max-height:400px;
+    max-width:450px;
+    height:auto;
+    width:auto;
+}
+```
+
+```{r setup, include=FALSE, cache=FALSE}
+outwidth <- 250
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, out.width=outwidth, results = "asis")
+
+imagefiles <- dir("images/", full.names=TRUE)
+imagedates <- as.POSIXct(sapply(strsplit(basename(imagefiles), "__"), function(x){x[1]}), format="%Y-%m-%d_%H:%M:%S", tz="GMT")
+
+img <- function(tstart=NA, tend=NA, columns=2, pattern=NA, isel=NA, caption=""){
+    if(!is.na(pattern)){
+        pattern <- gsub("images/","",pattern)
+        i <- grep(pattern, imagefiles)
+    }else if(!is.na(tstart)){
+        tstart <- as.POSIXct(tstart, tz="GMT")
+        if(is.na(tend)){
+            tend <- tstart
+        }else{
+            tend <- as.POSIXct(tend, tz="GMT")
+        }
+        i <- tstart <= imagedates & imagedates <= tend
+    }else{
+        i <- 1:length(imagefiles)
+    }
+    ##
+    if(!is.na(isel[1])){
+        ## Take n and continue from last icontinue
+        i <- i[isel]
+    }
+    ##
+    nms <- imagefiles[i]
+    dts <- imagedates[i]
+    ##
+    n <- length(nms)
+    if(n==1){
+        cat("<div style=\"text-align:center\">")
+        cat("[![](",nms,")](",nms," \"",strftime(dts[i]),"\")", sep="")
+        cat("</div>")
+    }
+    if(2 <= n & columns == 2){
+        cat("| | |\n")
+        cat("| :-: | :-: |\n")
+        for(i in seq(1,n,by=2)){
+            cat(paste0("| [![](",nms[i],")](",nms[i]," \"",dts[i],"\") |"))
+            if(i < n){
+                cat(paste0(" [![](",nms[i+1],")](",nms[i+1]," \"",dts[i+1],"\") |\n"), sep="")
+            }else{
+                cat(paste0(" |\n"))
+            }
+        }
+    }
+    if(2 <= n & columns == 3){
+        cat("| | | |\n")
+        cat("| :-: | :-: | :-: |\n")
+        for(i in seq(1,n,by=3)){
+            ## Insert first column
+            cat(paste0("| [![](",nms[i],")](",nms[i]," \"",dts[i],"\") |"))
+            if((i+1) < n){
+                ## Insert 2 more image
+                cat(paste0(" [![](",nms[i+1],")](",nms[i+1]," \"",dts[i+1],"\") |"))
+                cat(paste0(" [![](",nms[i+2],")](",nms[i+2]," \"",dts[i+1],"\") |\n"), sep="")
+            }else if(i < n){
+                ## Insert 1 more image and empty column
+                cat(paste0(" [![](",nms[i+1],")](",nms[i+1]," \"",dts[i+1],"\") ||\n"), sep="")
+            }else{
+                ## Insert 2 empty comlumns
+                cat(paste0(" | |\n"))
+            }
+        }
+    }
+    if(caption != ""){
+        cat("<div style=\"text-align:center\">",caption,"</div>")
+    }
+    cat("<br>")
+}
+```
+
+Kære alle
+
+Vi har nu rejst og set mange steder i Tanzania. Det har været vildt, det har
+været udfordrende og det har været en kæmpe oplevelse! Dette "postkort" er bare
+for at prøve at dele en lille del af oplevelsen. Beklager det blev lidt langt, men
+betragt det som en måneds facebookopslag samlet, så er det vel fair nok!
+Billederne fås i stor størrelse hvis man trykker på dem (jeg (Peder) har brugt lidt
+tid på at sætte dokumentet op (i rmarkdown)...nyder vist at pusle med min computer, ret
+Svend Ove agtigt (min morfar, han var dejlig!)).
+
+Hvis I ikke gider læse det, så giver vi gerne en lille fortælling når vi ses!
+Her er lidt [flere billeder](images.html).
+
+Kh. Peder, Christina, Carl og Peder
+
+Før og efter:
+
+```{r}
+img(pattern="2019-12-16_08:43:52|2020-01-09_11:56:58")
+```
+
+
+### Livet i Tanzania
+
+Man bliver sgu' overvældet af, at tage til et så anderledes sted, specielt når
+man har sine børn med. Selvom vi kun har boet på steder for rige mennesker, så
+kryber det hele under huden på en, og specielt de gange vi simpelthen bare 
+har gået en tur rundt og set på livet her - det er anderledes, på godt og ondt!
+
+På swahili "Hakuna matata": Tag det roligt. Vi kendte det fra løvernes konge filmen, men
+nu har vi også lært "Pole pole": Slow down, på dansk måske, "skru' ned for
+tempoet". Helt klart noget vi kan lære af...de kunne så lære at organisere sig
+fra os. Det er simpelthen overraskende, så upræcise de er med alting - lige fra,
+at der ikke er priser på noget i butikker, til, at der ingen affaldsindsamling er,
+at vejene er meget smadrede, og i det hele taget er man helt på egen hånd - som
+tanzanianer er der ikke rigtig nogen hjælp, at hente fra samfundet! Som en gut vi snakkede med
+beskrev: "Her tænker man faktisk kun på sig selv"...og på den anden side, så
+hænger man meget mere ud med hinanden, man sidder ikke inde i sit hus og
+kukkelurer...well, husene her er heller ikke værd at sidde inde i!
+
+Et par gange har vi prøvet at nævne klimaforandringer i en samtale, men det er
+simpelthen ikke et punkt på agandaen her - meget naturligt, når man faktisk ikke
+engang har en plan for hvad der skal ske i morgen. "Hakuna matata, det gør dig
+fri", tja, det er ikke meget afrikansk kultur vi får uden at opsøge den, men
+Løvernes konge har sneget sig ind. 
+
+
+### Tanzania er trygt og fredeligt
+
+Tanzania er fredeligt og man føler sig tryg. Selfølgeligt møder man
+turistpriser, men alle man snakker med er virkeligt rare, og de har noget
+værdifuldt i kulturen, man snakker man bare med hinanden, f.eks. var der flere
+gange hvor vores guide bare skulle købe noget og så snakkede han om lidt af
+hvert, på swahili, med den som solgte, og vi spurgte om han kendte vedkommende,
+men nej, de snakkede bare lidt...modsat os, et menneske i en butik er jo nærmest
+at betragte som en maskine! Dog hilser alle mulige lidt rigeligt på sådan nogen
+som os, men det vender man sig til.
+
+Frugt er ubeskriveligt, ift. til det vi får nordpå, og faktisk er maden vi fik,
+specielt på Zanzibar, virkeligt god! Gode råvarer, men også lækkert tilberedt -
+super smagsfuld.
+
+
+### Den vildeste natur
+
+Tanzania er det vildeste smukke land, her er simpelthen alt: hav, bjerge, natur,
+varmt (lidt for varmt om natten for os!)...tættere på paradis end Danmark om
+vinteren! Dog mangler der god kaffe og ost! Sjovt med kaffen, da de jo dyrker
+den, men man får Africafe overalt - en lidt smagsløs pulverkaffe.
+
+Vi har været heldige, at komme ud og opleve naturen på tæt hold i to
+nationalparker: Først i regnskoven i Udzungwa og derefter safari i Ruaha - man
+føler det er forkert, for tanzanianerne har sgu' ikke været der, det er alt for
+dyrt at leje jeep og guide. 
+
+I regnskoven er der vanvittigt meget liv og det er mega varmt og fugtigt -
+næsten for meget, f.eks. umuligt at tørre noget tøj vi vaskede, det hang 2-3
+dage på snor under halvtag uden at tørre og endte med at blive surt. Det var
+også lidt udfordrende for drengene, Carl var syg, feber og maven og ørene, og
+well, det var muligvis lidt for overvældende for Vilfred. Vi tilpassede
+os for ikke at gøre det til en dårlig oplevelse - dvs. at sidde og dimse med sit
+device! Vi havde nogle gode hikes til de smukkeste vandfald, og man kunne endog bade der.
+
+White monkabey (endemisk og sjælden abe) og træ der gror på en sten:
+
+```{r}
+img(pattern="images/2019-12-24_10:16:52|images/2019-12-24_12:00")
+```
+
+De vildeste sommerfugle og insekter. Christina holder en Buffalo spider:
+
+```{r}
+img(pattern="images/2019-12-24_14:45:22|images/2019-12-18_20:49|images/2019-12-20_16:15|images/2019-12-20_16:26:49")
+```
+
+Slanger:
+
+```{r}
+img(pattern="images/2019-12-27_08:55|images/2019-12-26_12:01")
+```
+
+Og vandfald man kan bade i:
+
+```{r}
+img(pattern="images/2019-12-26_11:43|images/2019-12-26_12:21")
+```
+
+I Ruaha er der buskland og savanne. Det er en hjerneblæsende oplevelse - stå op
+til solopgang sammen med flodheste, impalaer, elefanter, giraffer, løver og en
+millard fugle og endnu flere insekter. Der er sindsygt meget liv om morgenen når
+det er køligt, men det lægger sig midt på dagen, der bliver det simpelthen
+kogeren for alle. Vi udførte "game driving", det lyder skørt og det er det sådan 
+set også, men faktisk meget rammende betegnelse - man kører simpelthen rundt i
+jeep og glor på dyr. Det er den eneste måde man må komme omkring i national
+parken, man må ikke engang gå ud af bilen.
+
+Campen vi havde helt for os selv, med vores gode venner guide Gasto og kok
+Nico. To drenge på taget i solnedgang:
+
+```{r}
+img(pattern="images/2020-01-02_18:47|images/2020-01-02_19:15")
+```
+
+Toyota landcruiser, fedt navn, og det eneste rigtige valg til safari! og en red-billed hornbill:
+
+```{r}
+img(pattern="images/2020-01-02_17:49|images/2020-01-03_08:51")
+```
+
+Yes, vi så løver to gange - det lå nu mest og sov, men store katte! og altid
+aber - der er noget genkendeligt ved dem:
+
+```{r}
+img(pattern="images/2020-01-03_12:38|images/2020-01-04_08:30")
+```
+
+De store dyr er imponerende, men Christina er mest forelsket i de små:
+
+```{r}
+img(pattern="images/2020-01-03_16:15|images/2020-01-03_15:34")
+```
+
+Christinas ubetingede højdepunkt: Lortebiller! Meget spektakulært - de
+samarbejder og laver over 5 cm høje kugler af elefantlort og ruller afsted og
+ned i huller: 
+
+```{r}
+img(pattern="images/2020-01-04_12:59")
+```
+
+
+### Byer og veje
+
+Oplevelserne i byerne var på en måde noget af det som gør mest indtryk. Der er
+sindsygt mange mennesker, og det ser ikke ud til at de fleste har særligt
+meget. Vores guide (Gasto, som tog os rundt på i landcruiser i 10 dage) sagde, at
+der nu er 7 millioner i Dar Es Salaam. Peders bud er, at der så er 1 millioner
+små vejboder, men kun 10 forskellge slags, det hyppigste: Drikkelse og snack,
+tasker, klipklapper, tlf. tilbehør, ... Det er noget af det vildeste, man
+tænker, at hvis en nu tænkte: "hov, måske skulle jeg ikke prøve at sidde her
+hele dagen og sælge det, som de andre 100 boder sælger", så ville der ske ting
+og sager...men det er der vist ingen der gør.
+
+Noget andet skørt er, at alle steder vi kom, hvor vi skulle betjenes sammen med
+lokale, så medvirkede de alle til, at vi kom først i køen - altså uden vi gjorde
+noget som helst, sådan var det bare - en mystisk og ekstrem jantelov måske!
+
+Men altså, det er kæmpe oplevelser, at gå igennem et marked, der sker sindsygt
+meget. Råben, klirren, grin, gøjl, tror de hygger sig med det.
+
+På vejene, vi tog nogle crazy overhalinger af lastbiler - Dar Es Salaam har en
+kæmpe havn, og der køres varer i tvivlsomme lastbiler (de fleste er sikker fra
+skrot i Europa) af hovedvejen til lande længere inde i Afrika. Busserne er
+farverige, både deres fede maling og den sorte røg, som kommer ud af dem, uargs!
+De er fyldte og man må nok ofte regne med lidt et ekstra stop eller to på vejen.
+
+Typisk med rigtig store vandhuller på vejen. På vores første tur måtte vi
+simpelthen stoppe 3 km før vi var fremme, det var i en normal Toyota (80% af
+bilerne er Toyota), og vi havde været igennem vand der gik igennem til motoren
+og det dampede. 
+
+Vandhul og benzinopfyldning af de lokale fra vandflasker:
+
+```{r}
+img(pattern="images/2019-12-17_16:53:10|images/2019-12-23_14:45")
+```
+
+Man ser mange nedbrud og problematisk læssede fartøjer:
+
+```{r}
+img(pattern="images/2019-12-29_13:24|images/2020-01-06_16:54")
+```
+
+Marked i Iringa og madrassalg ved hovedvejen i Dar:
+
+```{r}
+img(pattern="images/2019-12-30_18:14|images/2020-01-06_18:45")
+```
+
+
+### Hotelresorts og hygiejne
+
+Ja, vi har boet på resorts, vi startede med 5 dage og sluttede med 5 dage...det
+er for de rige, dvs. folk fra vesten, men ja, vi har jo forventninger om at tingene
+fungerer, og at vi sover i en fin seng...og øj, man bliver sgu' også glad for
+AC, det er simpelthen så varmt at sove uden - ruineret nattesøvn er ufedt.
+
+Grænsen for hvad der er beskidt og hvad der kan kaldes "god stand" er simpelthen
+ligger et andet sted. I et hus uden gulv, dvs. med jordgulv, ja så er tingene
+lidt mindre rene. Køkkener i lokale huse er med et slags kulfyret lerkomfur og
+man ser kvinder stå bukket mens de laver mad. Vi var på et par lokale
+restaurenter - den danske hygienjesmiley ville være rigtig vred hvis den kom på besøg!
+
+De steder vi har været har været virkeligt fantastiske steder!
+
+Sov i telte på camp i regnskoven og på safari:
+
+```{r}
+img(pattern="images/2019-12-23_18:14")
+```
+
+Efterladenskaber på stranden på Zanzibar - nej, det er ikke dyrespor ved
+siden af. Tja, det er jo rimeligt praktisk toilet ved lavvande, så skylles det
+ud ved højvande...Meeeen, addrr, når man jokker i det!
+
+```{r}
+img(pattern="images/2020-01-10_10:59:19")
+```
+
+Affaldshåntering foregår ved afbrænding alle steder i små bål. Eller ved bare
+at smide det: "trash area", ja, der var en container, men det var ikke blevet tømt i nogle år. I Stone Town
+havde de dog indsamling - i brugte dunke skåret over: 
+
+```{r}
+img(pattern="images/2019-12-31_16:42|images/2020-01-08_10:09")
+```
+
+
+
+
+
+
+
+### Zanzibar
+
+Vi har været på Zanzibar i 10 dage. Tror vi må vise billeder og fortælle lidt
+når vi ses!

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Billeder fra Tanzania</title>
+
+<script src="images_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="images_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="images_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="images_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="images_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="images_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="images_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="images_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="images_files/navigation-1.1/tabsets.js"></script>
+<link href="images_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="images_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Billeder fra Tanzania</h1>
+
+</div>
+
+
+<head>
+<base target="_blank">
+</head>
+<style type="text/css">
+th, td {
+  width: 800px;
+  padding: 4px;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+  font-size: 18px;
+  line-height: 24px; 
+}  
+img{
+    max-height:400px;
+    max-width:450px;
+    height:auto;
+    width:auto;
+}
+</style>
+<div id="flere-billeder" class="section level3">
+<h3>Flere billeder</h3>
+<p>Her lidt flere udvalgte billeder.</p>
+<p>Afgang fra Brønshøj og vandhul på første køretur i Tanzania, som endte ved for stort vandhul:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-16_08:43:52__20191216_092300.jpg" title="2019-12-16 08:43:52"><img src="images/2019-12-16_08:43:52__20191216_092300.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-17_16:50:23__IMG_20191217_165022.jpg" title="2019-12-17 16:50:23"><img src="images/2019-12-17_16:50:23__IMG_20191217_165022.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2019-12-17_16:53:07__20191217_165307.jpg" title="2019-12-17 16:53:07"><img src="images/2019-12-17_16:53:07__20191217_165307.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-17_16:53:10__20191217_165310.jpg" title="2019-12-17 16:53:10"><img src="images/2019-12-17_16:53:10__20191217_165310.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Der var en slange i poolen, abe til morgenmad og vrag, som vi dykkede ved:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-17_19:13:10__IMG_20191217_191309.jpg" title="2019-12-17 19:13:10"><img src="images/2019-12-17_19:13:10__IMG_20191217_191309.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-18_09:37:49__IMG_20191218_093748.jpg" title="2019-12-18 09:37:49"><img src="images/2019-12-18_09:37:49__IMG_20191218_093748.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2019-12-18_16:33:56__IMG_1016.JPG" title="2019-12-18 16:33:56"><img src="images/2019-12-18_16:33:56__IMG_1016.JPG" /></a></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Insektliv og primater, der kigger på dem:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-18_20:49:42__IMG_20191218_204941.jpg" title="2019-12-18 20:49:42"><img src="images/2019-12-18_20:49:42__IMG_20191218_204941.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-19_10:54:36__IMG_1024.JPG" title="2019-12-19 10:54:36"><img src="images/2019-12-19_10:54:36__IMG_1024.JPG" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2019-12-20_16:15:13__IMG_1067.JPG" title="2019-12-20 16:15:13"><img src="images/2019-12-20_16:15:13__IMG_1067.JPG" /></a></td>
+<td align="center"><a href="images//2019-12-20_16:26:49__IMG_1094.JPG" title="2019-12-20 16:26:49"><img src="images/2019-12-20_16:26:49__IMG_1094.JPG" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-21_17:49:46__IMG_20191221_174945.jpg" title="2019-12-21 17:49:46"><img src="images/2019-12-21_17:49:46__IMG_20191221_174945.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-21_17:49:49__IMG_20191221_174949.jpg" title="2019-12-21 17:49:49"><img src="images/2019-12-21_17:49:49__IMG_20191221_174949.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>På vej til Udzungwa får vi ekstra benzin på og vi sov i telte der, på Hondo Hondo camp:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-23_14:45:39__IMG_20191223_144539.jpg" title="2019-12-23 14:45:39"><img src="images/2019-12-23_14:45:39__IMG_20191223_144539.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-23_18:14:16__20191223_181416.jpg" title="2019-12-23 18:14:16"><img src="images/2019-12-23_18:14:16__20191223_181416.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>VILDESTE natur:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-24_10:16:52__IMG_1215.JPG" title="2019-12-24 10:16:52"><img src="images/2019-12-24_10:16:52__IMG_1215.JPG" /></a></td>
+<td align="center"><a href="images//2019-12-24_12:00:23__IMG_20191224_120023.jpg" title="2019-12-24 12:00:23"><img src="images/2019-12-24_12:00:23__IMG_20191224_120023.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2019-12-24_14:45:00__IMG_20191224_144500.jpg" title="2019-12-24 14:45:00"><img src="images/2019-12-24_14:45:00__IMG_20191224_144500.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-24_14:45:22__IMG_20191224_144519.jpg" title="2019-12-24 14:45:22"><img src="images/2019-12-24_14:45:22__IMG_20191224_144519.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Gåtur til landsbyen med Udzungwa i baggrunden og det største tusindeben ever:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-25_16:26:13__20191225_162614.jpg" title="2019-12-25 16:26:13"><img src="images/2019-12-25_16:26:13__20191225_162614.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-25_19:45:41__IMG_20191225_194538.jpg" title="2019-12-25 19:45:41"><img src="images/2019-12-25_19:45:41__IMG_20191225_194538.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Vandfald, slange og en abe:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-26_11:43:43__IMG_1307.JPG" title="2019-12-26 11:43:43"><img src="images/2019-12-26_11:43:43__IMG_1307.JPG" /></a></td>
+<td align="center"><a href="images//2019-12-26_12:01:23__IMG_1312.JPG" title="2019-12-26 12:01:23"><img src="images/2019-12-26_12:01:23__IMG_1312.JPG" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2019-12-26_12:21:41__20191226_122140_025.jpg" title="2019-12-26 12:21:41"><img src="images/2019-12-26_12:21:41__20191226_122140_025.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-26_14:57:54__IMG_20191226_145753.jpg" title="2019-12-26 14:57:54"><img src="images/2019-12-26_14:57:54__IMG_20191226_145753.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Slange og busnedbrud:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-27_08:55:09__20191227_085509.jpg" title="2019-12-27 08:55:09"><img src="images/2019-12-27_08:55:09__20191227_085509.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-29_13:24:24__IMG_20191229_132422.jpg" title="2019-12-29 13:24:24"><img src="images/2019-12-29_13:24:24__IMG_20191229_132422.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Safe zone på hotel med wifi, noget af det vigtiste ifølge rejsens mindreårige, samt markedet i Iringa:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-30_10:51:33__20191230_105133.jpg" title="2019-12-30 10:51:33"><img src="images/2019-12-30_10:51:33__20191230_105133.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-30_18:14:29__20191230_181430.jpg" title="2019-12-30 18:14:29"><img src="images/2019-12-30_18:14:29__20191230_181430.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>“Sjov” plakat Carl fotograferede i en lille butik, samt affaldsdump:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2019-12-31_13:11:19__IMG_20191231_131118.jpg" title="2019-12-31 13:11:19"><img src="images/2019-12-31_13:11:19__IMG_20191231_131118.jpg" /></a></td>
+<td align="center"><a href="images//2019-12-31_16:42:53__IMG_20191231_164253.jpg" title="2019-12-31 16:42:53"><img src="images/2019-12-31_16:42:53__IMG_20191231_164253.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Mind blowing smukt sted “Isimail” nær Iringa, tja, en ting er sikker: Hvis Vilf ser vand, så bader han:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-01_16:45:25__20200101_164525.jpg" title="2020-01-01 16:45:25"><img src="images/2020-01-01_16:45:25__20200101_164525.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-01_16:52:35__IMG_20200101_165234.jpg" title="2020-01-01 16:52:35"><img src="images/2020-01-01_16:52:35__IMG_20200101_165234.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Safari:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-02_17:49:53__20200102_174954.jpg" title="2020-01-02 17:49:53"><img src="images/2020-01-02_17:49:53__20200102_174954.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-02_18:47:12__20200102_184712.jpg" title="2020-01-02 18:47:12"><img src="images/2020-01-02_18:47:12__20200102_184712.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-02_19:15:40__IMG_20200102_191539.jpg" title="2020-01-02 19:15:40"><img src="images/2020-01-02_19:15:40__IMG_20200102_191539.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-03_08:51:31__IMG_1465.JPG" title="2020-01-03 08:51:31"><img src="images/2020-01-03_08:51:31__IMG_1465.JPG" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-03_10:38:58__IMG_1502.JPG" title="2020-01-03 10:38:58"><img src="images/2020-01-03_10:38:58__IMG_1502.JPG" /></a></td>
+<td align="center"><a href="images//2020-01-03_12:38:04__IMG_1569.JPG" title="2020-01-03 12:38:04"><img src="images/2020-01-03_12:38:04__IMG_1569.JPG" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Sommerfugl, en tørret bille, og vores guide Gasto:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-03_15:34:38__IMG_1605.JPG" title="2020-01-03 15:34:38"><img src="images/2020-01-03_15:34:38__IMG_1605.JPG" /></a></td>
+<td align="center"><a href="images//2020-01-03_16:15:28__IMG_1642.JPG" title="2020-01-03 16:15:28"><img src="images/2020-01-03_16:15:28__IMG_1642.JPG" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-03_18:38:10__IMG_20200103_183809.jpg" title="2020-01-03 18:38:10"><img src="images/2020-01-03_18:38:10__IMG_20200103_183809.jpg" /></a></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Mere safari:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-04_08:04:16__20200104_080416.jpg" title="2020-01-04 08:04:16"><img src="images/2020-01-04_08:04:16__20200104_080416.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-04_08:30:42__IMG_1677.JPG" title="2020-01-04 08:30:42"><img src="images/2020-01-04_08:30:42__IMG_1677.JPG" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-04_11:07:39__IMG_1698.JPG" title="2020-01-04 11:07:39"><img src="images/2020-01-04_11:07:39__IMG_1698.JPG" /></a></td>
+<td align="center"><a href="images//2020-01-04_11:38:00__IMG_1712.JPG" title="2020-01-04 11:38:00"><img src="images/2020-01-04_11:38:00__IMG_1712.JPG" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Lortebiller i aktion:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-04_12:59:53__IMG_1750.JPG" title="2020-01-04 12:59:53"><img src="images/2020-01-04_12:59:53__IMG_1750.JPG" /></a></td>
+<td align="center"><a href="images//2020-01-04_12:59:53__IMG_1751.JPG" title="2020-01-04 12:59:53"><img src="images/2020-01-04_12:59:53__IMG_1751.JPG" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-04_12:59:54__IMG_1752.JPG" title="2020-01-04 12:59:54"><img src="images/2020-01-04_12:59:54__IMG_1752.JPG" /></a></td>
+<td align="center"><a href="images//2020-01-04_12:59:56__IMG_1753.JPG" title="2020-01-04 12:59:56"><img src="images/2020-01-04_12:59:56__IMG_1753.JPG" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Landcruiseren og elefanter:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-04_13:15:07__IMG_20200104_131505.jpg" title="2020-01-04 13:15:07"><img src="images/2020-01-04_13:15:07__IMG_20200104_131505.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-04_14:19:39__IMG_1755.JPG" title="2020-01-04 14:19:39"><img src="images/2020-01-04_14:19:39__IMG_1755.JPG" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Hjemme hos Nico, vores kok på safari, og skør trækul på motorcykel på hovedvejen, der er kun et spor i hver retning og fyldt med trucks - som nogle gange kører meget langsomt, så der bliver lavet crazy overhalinger, ofte så dem i den anden side skal bremse op!:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-06_11:11:10__IMG_20200106_111110.jpg" title="2020-01-06 11:11:10"><img src="images/2020-01-06_11:11:10__IMG_20200106_111110.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-06_16:54:46__IMG_20200106_165444.jpg" title="2020-01-06 16:54:46"><img src="images/2020-01-06_16:54:46__IMG_20200106_165444.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-06_18:45:08__IMG_20200106_184507.jpg" title="2020-01-06 18:45:08"><img src="images/2020-01-06_18:45:08__IMG_20200106_184507.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-07_21:33:31__IMG_20200107_213331.jpg" title="2020-01-07 21:33:31"><img src="images/2020-01-07_21:33:31__IMG_20200107_213331.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-08_10:03:03__IMG_20200108_100300.jpg" title="2020-01-08 10:03:03"><img src="images/2020-01-08_10:03:03__IMG_20200108_100300.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-08_10:09:08__IMG_20200108_100908.jpg" title="2020-01-08 10:09:08"><img src="images/2020-01-08_10:09:08__IMG_20200108_100908.jpg" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-08_12:08:24__IMG_20200108_120823.jpg" title="2020-01-08 12:08:24"><img src="images/2020-01-08_12:08:24__IMG_20200108_120823.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-08_16:51:20__IMG_20200108_165117.jpg" title="2020-01-08 16:51:20"><img src="images/2020-01-08_16:51:20__IMG_20200108_165117.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-08_21:10:44__IMG_20200108_211044.jpg" title="2020-01-08 21:10:44"><img src="images/2020-01-08_21:10:44__IMG_20200108_211044.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-09_09:43:21__IMG_20200109_094321.jpg" title="2020-01-09 09:43:21"><img src="images/2020-01-09_09:43:21__IMG_20200109_094321.jpg" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-09_11:56:58__20200109_115658(2).jpg" title="2020-01-09 11:56:58"><img src="images/2020-01-09_11:56:58__20200109_115658(2).jpg" /></a></td>
+<td align="center"><a href="images//2020-01-09_20:52:15__IMG_20200109_205213.jpg" title="2020-01-09 20:52:15"><img src="images/2020-01-09_20:52:15__IMG_20200109_205213.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-10_09:42:47__IMG_20200110_094246.jpg" title="2020-01-10 09:42:47"><img src="images/2020-01-10_09:42:47__IMG_20200110_094246.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-10_10:59:19__IMG_20200110_105918.jpg" title="2020-01-10 10:59:19"><img src="images/2020-01-10_10:59:19__IMG_20200110_105918.jpg" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-10_10:59:23__IMG_20200110_105922.jpg" title="2020-01-10 10:59:23"><img src="images/2020-01-10_10:59:23__IMG_20200110_105922.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-10_15:13:23__20200111_131359.jpg" title="2020-01-10 15:13:23"><img src="images/2020-01-10_15:13:23__20200111_131359.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="images//2020-01-12_10:37:43__IMG_20200112_103743.jpg" title="2020-01-12 10:37:43"><img src="images/2020-01-12_10:37:43__IMG_20200112_103743.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-12_16:48:07__IMG_20200112_164805.jpg" title="2020-01-12 16:48:07"><img src="images/2020-01-12_16:48:07__IMG_20200112_164805.jpg" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="images//2020-01-12_18:38:18__20200112_183818.jpg" title="2020-01-12 18:38:18"><img src="images/2020-01-12_18:38:18__20200112_183818.jpg" /></a></td>
+<td align="center"><a href="images//2020-01-12_19:11:44__IMG_20200112_191142.jpg" title="2020-01-12 19:11:44"><img src="images/2020-01-12_19:11:44__IMG_20200112_191142.jpg" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+<td align="center"><a href="NA" title="NA"><img src="NA" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

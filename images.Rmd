@@ -1,0 +1,265 @@
+---
+title: "Billeder fra Tanzania"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    self_contained: false
+---
+
+<head>
+    <base target="_blank">
+</head>
+
+```{css, echo=FALSE}
+th, td {
+  width: 800px;
+  padding: 4px;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+  font-size: 18px;
+  line-height: 24px; 
+}  
+img{
+    max-height:400px;
+    max-width:450px;
+    height:auto;
+    width:auto;
+}
+```
+
+```{r setup, include=FALSE, cache=FALSE}
+outwidth <- 250
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, out.width=outwidth, results = "asis")
+
+imagefiles <- dir("images/", full.names=TRUE)
+imagedates <- as.POSIXct(sapply(strsplit(basename(imagefiles), "__"), function(x){x[1]}), format="%Y-%m-%d_%H:%M:%S", tz="GMT")
+
+img <- function(tstart=NA, tend=NA, columns=2, pattern=NA, isel=NA, caption=""){
+    if(!is.na(pattern)){
+        pattern <- gsub("images/","",pattern)
+        i <- grep(pattern, imagefiles)
+    }else if(!is.na(tstart)){
+        tstart <- as.POSIXct(tstart, tz="GMT")
+        if(is.na(tend)){
+            tend <- tstart
+        }else{
+            tend <- as.POSIXct(tend, tz="GMT")
+        }
+        i <- tstart <= imagedates & imagedates <= tend
+    }else{
+        i <- 1:length(imagefiles)
+    }
+    ##
+    if(!is.na(isel[1])){
+        ## Take n and continue from last icontinue
+        i <- i[isel]
+    }
+    ##
+    nms <- imagefiles[i]
+    dts <- imagedates[i]
+    ##
+    n <- length(nms)
+    if(n==1){
+        cat("<div style=\"text-align:center\">")
+        cat("[![](",nms,")](",nms," \"",strftime(dts[i]),"\")", sep="")
+        cat("</div>")
+    }
+    if(2 <= n & columns == 2){
+        cat("| | |\n")
+        cat("| :-: | :-: |\n")
+        for(i in seq(1,n,by=2)){
+            cat(paste0("| [![](",nms[i],")](",nms[i]," \"",dts[i],"\") |"))
+            if(i < n){
+                cat(paste0(" [![](",nms[i+1],")](",nms[i+1]," \"",dts[i+1],"\") |\n"), sep="")
+            }else{
+                cat(paste0(" |\n"))
+            }
+        }
+    }
+    if(2 <= n & columns == 3){
+        cat("| | | |\n")
+        cat("| :-: | :-: | :-: |\n")
+        for(i in seq(1,n,by=3)){
+            ## Insert first column
+            cat(paste0("| [![](",nms[i],")](",nms[i]," \"",dts[i],"\") |"))
+            if((i+1) < n){
+                ## Insert 2 more image
+                cat(paste0(" [![](",nms[i+1],")](",nms[i+1]," \"",dts[i+1],"\") |"))
+                cat(paste0(" [![](",nms[i+2],")](",nms[i+2]," \"",dts[i+1],"\") |\n"), sep="")
+            }else if(i < n){
+                ## Insert 1 more image and empty column
+                cat(paste0(" [![](",nms[i+1],")](",nms[i+1]," \"",dts[i+1],"\") ||\n"), sep="")
+            }else{
+                ## Insert 2 empty comlumns
+                cat(paste0(" | |\n"))
+            }
+        }
+    }
+    if(caption != ""){
+        cat("<div style=\"text-align:center\">",caption,"</div>")
+    }
+    cat("<br>")
+}
+```
+
+
+### Flere billeder
+
+Her lidt flere udvalgte billeder.
+
+Afgang fra Brønshøj og vandhul på første køretur i Tanzania, som endte ved for
+stort vandhul:
+
+```{r}
+n <- 4
+i <- 1
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Der var en slange i poolen, abe til morgenmad og vrag, som vi dykkede ved:
+
+```{r}
+n <- 3
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Insektliv og primater, der kigger på dem:
+
+```{r}
+n <- 6
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+På vej til Udzungwa får vi ekstra benzin på og vi sov i telte der, på Hondo
+Hondo camp:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+VILDESTE natur:
+
+```{r}
+n <- 4
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Gåtur til landsbyen med Udzungwa i baggrunden og det største tusindeben ever:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Vandfald, slange og en abe:
+
+```{r}
+n <- 4
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Slange og busnedbrud:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Safe zone på hotel med wifi, noget af det vigtiste ifølge rejsens
+mindreårige, samt markedet i Iringa:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+"Sjov" plakat Carl fotograferede i en lille butik, samt affaldsdump:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Mind blowing smukt sted "Isimail" nær Iringa, tja, en ting er sikker: Hvis Vilf
+ser vand, så bader han:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Safari:
+
+```{r}
+n <- 6
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Sommerfugl, en tørret bille, og vores guide Gasto:
+
+```{r}
+n <- 3
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Mere safari:
+
+```{r}
+n <- 4
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Lortebiller i aktion:
+
+```{r}
+n <- 4
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Landcruiseren og elefanter:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+Hjemme hos Nico, vores kok på safari, og skør trækul på motorcykel på
+hovedvejen, der er kun et spor i hver retning og fyldt med trucks - som nogle
+gange kører meget langsomt, så der bliver lavet crazy overhalinger, ofte så dem
+i den anden side skal bremse op!:
+
+```{r}
+n <- 2
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+
+```{r}
+n <- 100
+img(isel=i:(i+n-1))
+i <- i + n
+```
+
+
